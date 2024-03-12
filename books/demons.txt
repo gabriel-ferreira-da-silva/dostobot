@@ -38,9 +38,10 @@ THE POSSESSED (The Devils)
 PART I
 
 
+CHAPTER I
 
 
-CHAPTER I. INTRODUCTORY
+INTRODUCTORY
 
 SOME DETAILS OF THE BIOGRAPHY OF THAT HIGHLY RESPECTED GENTLEMAN STEPAN
 TROFIMOVITCH VERHOVENSKY.
@@ -1300,7 +1301,9 @@ the memory of some leading man of the past.
 
 
 
-CHAPTER II. PRINCE HARRY. MATCHMAKING.
+CHAPTER II
+
+ PRINCE HARRY. MATCHMAKING.
 
 
 I
@@ -2921,7 +2924,9 @@ exclamations. In the evening we drank too much again.
 
 
 
-CHAPTER III. THE SINS OF OTHERS
+CHAPTER III
+
+ THE SINS OF OTHERS
 
 
 I
@@ -4818,7 +4823,9 @@ time you were in bed. _Voyez vous,_ it's twelve o'clock...."
 
 
 
-CHAPTER IV. THE CRIPPLE
+CHAPTER IV
+
+ THE CRIPPLE
 
 
 I
@@ -6335,7 +6342,9 @@ Petrovna sat "as though in a mesmeric sleep." Liza's own expression.
 
 
 
-CHAPTER V. THE SUBTLE SERPENT
+CHAPTER V
+
+ THE SUBTLE SERPENT
 
 
 I
@@ -8418,7 +8427,9 @@ PART II
 
 
 
-CHAPTER I. NIGHT
+CHAPTER I
+
+ NIGHT
 
 
 I
@@ -10572,7 +10583,9 @@ The darkness and the rain continued as before.
 
 
 
-CHAPTER II. NIGHT (continued)
+CHAPTER II
+
+ NIGHT (continued)
 
 
 I
@@ -11662,7 +11675,9 @@ were still to be heard in the darkness.
 
 
 
-CHAPTER III. THE DUEL
+CHAPTER III
+
+ THE DUEL
 
 
 I
@@ -12230,7 +12245,9 @@ H'm!... but perhaps that's what I want."
 
 
 
-CHAPTER IV. ALL IN EXPECTATION
+CHAPTER IV
+
+ ALL IN EXPECTATION
 
 
 I
@@ -13162,7 +13179,9 @@ would have happened. She was responsible for a great deal.
 
 
 
-CHAPTER V. ON THE EVE OF THE FETE
+CHAPTER V
+
+ ON THE EVE OF THE FETE
 
 
 I
@@ -14179,7 +14198,9 @@ dead with emotion.
 
 
 
-CHAPTER VI. PYOTR STEPANOVITCH IS BUSY
+CHAPTER VI
+
+ PYOTR STEPANOVITCH IS BUSY
 
 
 I
@@ -16181,7 +16202,9 @@ simple business."
 
 
 
-CHAPTER VII. A MEETING
+CHAPTER VII
+
+ A MEETING
 
 
 I
@@ -17266,7 +17289,9 @@ They went out.
 
 
 
-CHAPTER VIII. IVAN THE TSAREVITCH
+CHAPTER VIII
+
+ IVAN THE TSAREVITCH
 
 
 They had gone. Pyotr Stepanovitch was about to rush back to the meeting
@@ -17722,7 +17747,9 @@ answer!"
 
 
 
-CHAPTER IX. A RAID AT STEPAN TROFIMOVITCH'S
+CHAPTER IX
+
+ A RAID AT STEPAN TROFIMOVITCH'S
 
 
 Meanwhile an incident had occurred which astounded me and shattered
@@ -18140,7 +18167,9 @@ as he suddenly displayed that morning. Poor friend, kind-hearted friend!
 
 
 
-CHAPTER X. FILIBUSTERS. A FATAL MORNING
+CHAPTER X
+
+ FILIBUSTERS. A FATAL MORNING
 
 
 I
@@ -19103,7 +19132,9 @@ PART III
 
 
 
-CHAPTER I. THE FETE--FIRST PART
+CHAPTER I
+
+ THE FETE--FIRST PART
 
 
 I
@@ -20272,7 +20303,9 @@ course, I went to Stepan Trofimovitch's.
 
 
 
-CHAPTER II. THE END OF THE FETE
+CHAPTER II
+
+ THE END OF THE FETE
 
 
 I
@@ -21444,7 +21477,9 @@ on like this?" and so saying he waved his arms.
 
 
 
-CHAPTER III. A ROMANCE ENDED
+CHAPTER III
+
+ A ROMANCE ENDED
 
 
 I
@@ -22375,7 +22410,9 @@ irresponsible. I am of that opinion to this day.
 
 
 
-CHAPTER IV. THE LAST RESOLUTION
+CHAPTER IV
+
+ THE LAST RESOLUTION
 
 
 I
@@ -23436,7 +23473,9 @@ he still had his passport in his pocket.
 
 
 
-CHAPTER V. A WANDERER
+CHAPTER V
+
+ A WANDERER
 
 
 I
@@ -24879,7 +24918,9 @@ They walked very fast.
 
 
 
-CHAPTER VI. A BUSY NIGHT
+CHAPTER VI
+
+ A BUSY NIGHT
 
 
 I
@@ -26248,7 +26289,9 @@ evening before.
 
 
 
-CHAPTER VII. STEPAN TROFIMOVITCH'S LAST WANDERING
+CHAPTER VII
+
+ STEPAN TROFIMOVITCH'S LAST WANDERING
 
 
 I
@@ -27778,7 +27821,9 @@ prophecy.
 
 
 
-CHAPTER VIII. CONCLUSION
+CHAPTER VIII
+
+ CONCLUSION
 
 ALL THE CRIMES AND VILLAINIES THAT had been perpetrated were discovered
 with extraordinary rapidity, much more quickly than Pyotr Stepanovitch

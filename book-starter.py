@@ -1,22 +1,40 @@
 import time
-import twitterkeys as keys
 import tweepy
 import pickle
 from bookhandler import BookHandler
 from datetime import datetime
 import sys
 
-client = tweepy.Client(keys.bearer_token, keys.api_key, keys.api_key_secret, keys.access_token, keys.access_token_secret)
-auth = tweepy.OAuth1UserHandler(keys.api_key, keys.api_key_secret, keys.access_token, keys.access_token_secret)
-api = tweepy.API(auth,wait_on_rate_limit=True)
-file_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/var"
+file_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/barr"
 
-book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/assets/books/crime-and-punishment-english.txt"
+book_arr=[]
+book_title = "crime and punishment"
+book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/crime-and-punishment.txt"
+book_arr.append((book_title, book_path))
 
-book = BookHandler()
-book.set_english_path(book_path)
-book.last_update_date= datetime.now()
+book_title = "notes from the underground"
+book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/notes-from-the-underground.txt"
 
+book_arr.append((book_title, book_path))
+
+book_title = "demons"
+book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/demons.txt"
+book_arr.append((book_title, book_path))
+
+book_title = "brothers karamazov"
+book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/brothers-karamazov.txt"
+book_arr.append((book_title, book_path))
+
+
+bh_array = []
+for b in book_arr:
+    print("Loading : " + b[0]+"...")
+    book = BookHandler()
+    book.set_english_path(b[1])
+    book.en_book.book_title = b[0]
+    book.last_update_date= datetime.now()
+    bh_array.append(book)
+    
 with open(file_path, 'wb') as file:
                 # Serialize and write the variable to the file
-                pickle.dump(book, file)
+                pickle.dump(bh_array, file)
