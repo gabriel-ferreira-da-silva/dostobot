@@ -23,6 +23,7 @@ class BookHandler:
     def find_chapter(self, quote):
         i=quote.find('CHAPTER')
         chapter = None
+        a=-1
         if i == -1:
             chapter=None
         else:
@@ -36,7 +37,7 @@ class BookHandler:
                 num+=quote[a]
                 a+=1
             chapter = quote[i:a]
-        return chapter
+        return chapter,a
     
     def find_part(self, quote):
         i=quote.find('PART')
@@ -107,15 +108,16 @@ class BookHandler:
                     self.en_book.current_pos = i+1
                     self.en_book.last_quote = self.en_book.current_quote
 
-                    chapter = self.find_chapter(quote)
+                    chapter, m = self.find_chapter(quote)
+                    
+                    part = self.find_part(quote)
+                    if part!= None:
+                        self.en_book.current_part = part
                     
                     if chapter != None:
                         self.en_book.current_chapter = chapter
+                        quote = quote[m:]
                     
-                    chapter = self.find_part(quote)
-                    if chapter != None:
-                        self.en_book.current_part = chapter
-
                     self.en_book.current_quote = quote
                     return
         return
@@ -161,7 +163,7 @@ class BookHandler:
         while quote[i]!=" ":
             new_chapter+=quote[i]
             i+=1
-        
+
         return (new_chapter, i)
 
         

@@ -8,20 +8,23 @@ import sys
 file_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/barr"
 
 book_arr=[]
-book_title = "crime and punishment"
+
+'''
+book_title = "Crime and Punishment"
 book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/crime-and-punishment.txt"
 book_arr.append((book_title, book_path))
 
-book_title = "notes from the underground"
+book_title = "Notes from the Underground"
 book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/notes-from-the-underground.txt"
 
 book_arr.append((book_title, book_path))
-
-book_title = "demons"
-book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/demons.txt"
+'''
+'''
+book_title = "The Devils"
+book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/the-devils.txt"
 book_arr.append((book_title, book_path))
-
-book_title = "brothers karamazov"
+'''
+book_title = "Brothers Karamazov"
 book_path = "C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/books/brothers-karamazov.txt"
 book_arr.append((book_title, book_path))
 

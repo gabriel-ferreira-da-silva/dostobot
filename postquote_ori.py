@@ -39,21 +39,21 @@ print(quote)
 q=quote[0:240]
 quotes.append(q)
 quote = quote[240:]
-print("quote size "+ str(len(quote)))
 
-res= client.create_tweet(text=q)
-res_id = res[0]['id']
-
-while len(quote) > 0:
+while len(quote) > 240:
         q1=quote[0:240]
         quotes.append(q1)
         quote = quote[240:]
-        print("quote size " + str(len(quote)))
-        time.sleep(2)
-        res= client.create_tweet(text=q1, in_reply_to_tweet_id=res_id)
+
+
+res= client.create_tweet(text="none to be see, to be feel, to fell")
+
+res= client.create_tweet(text=quotes[0])
+res_id = res[0]['id']
+for i in range(1, len(quotes)):
+        res= client.create_tweet(text=quotes[i], in_reply_to_tweet_id=res_id)
         res_id = res[0]['id']
         print(res)
-
 
 status = ""
 status += book.en_book.book_title + "\n"
