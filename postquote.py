@@ -15,6 +15,8 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 file_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/barr"
 last_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/lb"
 
+suc_path="C:/Users/gab_f/OneDrive/Desktop/projetos/dostobot/sucess.txt"
+
 book=None
 last_book=None
 
@@ -41,18 +43,19 @@ if last_book !=None:
         print("\nlastbook: " +str(last_book.en_book.last_update_date) )
         print("\nbook: " +str(book.en_book.last_update_date) )
         print("\n\ntime diference "+ str(datedif)+"\n\n")
-        if datedif < 10:
+        if datedif < 4:
                 print("\n\n\nExiting program on post time dif")
-                exit()
+                npost=-100000000000
 
-        while datedif >= deltatime:
+        while datedif >= deltatime and npost > -1:
                 datedif = datedif - deltatime
                 npost+=1
 else:
         npost=1
 
-#npost=0
+
 while npost >= 1:
+        time.sleep(2)
         npost-=1
 
         with open(file_path, 'rb') as file:
@@ -104,3 +107,7 @@ while npost >= 1:
         last_book = book
         with open(last_path, 'wb') as file:
                 pickle.dump(last_book, file)
+
+suc = "É SUCESSO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+with open(suc_path, 'wb') as file:
+        pickle.dump(suc, file)
