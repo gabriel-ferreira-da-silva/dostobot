@@ -21,11 +21,9 @@ book=None
 last_book=None
 
 with open(last_path, 'rb') as file:
-        # Deserialize and retrieve the variable from the file
         last_book = pickle.load(file)
 
 with open(file_path, 'rb') as file:
-        # Deserialize and retrieve the variable from the file
         bookarr = pickle.load(file)
 
 index = random.randint(0, len(bookarr) -1)
@@ -59,7 +57,6 @@ while npost >= 1:
         npost-=1
 
         with open(file_path, 'rb') as file:
-                # Deserialize and retrieve the variable from the file
                 bookarr = pickle.load(file)
 
         index = random.randint(0, len(bookarr) -1)
@@ -81,6 +78,9 @@ while npost >= 1:
         quote = quote[240:]
         print("quote size "+ str(len(quote)))
 
+        if len(quote) > 0:
+                q+=" +"
+
         res= client.create_tweet(text=q)
         res_id = res[0]['id']
 
@@ -88,6 +88,10 @@ while npost >= 1:
                 q1=quote[0:240]
                 quotes.append(q1)
                 quote = quote[240:]
+                
+                if len(quote) > 0:
+                        q1+=" +"
+
                 print("quote size " + str(len(quote)))
                 time.sleep(2)
                 res= client.create_tweet(text=q1, in_reply_to_tweet_id=res_id)
@@ -108,6 +112,3 @@ while npost >= 1:
         with open(last_path, 'wb') as file:
                 pickle.dump(last_book, file)
 
-suc = "É SUCESSO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-with open(suc_path, 'wb') as file:
-        pickle.dump(suc, file)
