@@ -69,37 +69,24 @@ while npost >= 1:
         with open(file_path, 'wb') as file:
                 pickle.dump(bookarr,file)
 
-        quotes=[]
+        postquote=""
+        res=None
+        res_id=None
 
-        print(quote)
+        for ch in quote:
+                if ch==" " and len(postquote) > 250:
+                        postquote+=" +"
+                        res= client.create_tweet(text=postquote, in_reply_to_tweet_id=res_id)
+                        res_id = res[0]['id']
+                        postquote=""
+                
+                postquote+=ch
 
-        q=quote[0:240]
-        quotes.append(q)
-        quote = quote[240:]
-        print("quote size "+ str(len(quote)))
-
-        if len(quote) > 0:
-                q+=" +"
-
-        res= client.create_tweet(text=q)
+        res= client.create_tweet(text=postquote, in_reply_to_tweet_id=res_id)
         res_id = res[0]['id']
 
-        while len(quote) > 0:
-                q1=quote[0:240]
-                quotes.append(q1)
-                quote = quote[240:]
-                
-                if len(quote) > 0:
-                        q1+=" +"
-
-                print("quote size " + str(len(quote)))
-                time.sleep(2)
-                res= client.create_tweet(text=q1, in_reply_to_tweet_id=res_id)
-                res_id = res[0]['id']
-                print(res)
-
         status = ""
-        status += book.en_book.book_title + "; "
+        status += book.en_book.book_title + ".\n"
         status += "Chapter " + book.en_book.current_chapter[7:]+ ", " 
         status += "Part " + book.en_book.current_part[5:]+"."
 
