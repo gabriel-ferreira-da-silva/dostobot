@@ -64,6 +64,12 @@ while npost >= 1:
         book.getnextquote()
         quote = book.en_book.current_quote
         book.en_book.last_update_date = datetime.datetime.now()
+
+        if book.en_book.current_pos >= (len(book.en_book.book_text) - 100):
+                book.en_book.current_pos = 0
+                book.en_book.current_part="part 1"
+                book.en_book.current_chapter="chapter 1"
+                
         bookarr[index] = book
 
         with open(file_path, 'wb') as file:
