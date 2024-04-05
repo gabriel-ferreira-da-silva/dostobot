@@ -26,7 +26,7 @@ with open(last_path, 'rb') as file:
 with open(file_path, 'rb') as file:
         bookarr = pickle.load(file)
 
-index = random.randint(0, len(bookarr) -1)
+index = random.randint(0, len(bookarr)-1)
 book = bookarr[index]
 book.getnextquote()
 quote = book.en_book.current_quote
